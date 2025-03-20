@@ -1,34 +1,17 @@
-// define matrix sizes
-rows_1 = 2
-cols_1 = 5
-rows_2 = 5
-cols_2 = 3
+// define matrices sizes
 
-M1 = zeros(rows_1, cols_1);
-M2 = zeros(rows_2, cols_2);
-R = zeros(rows_1, cols_2);
+rows_1 = 3
+cols_1 = 3
+rows_2 = 3 // must be equal than cols_1
+cols_2 = 2
 
 // attribute values
 
-counter = 1
+M1 = [3 1 7; 8 2 5; 9 6 4];
+M2 = [2 4; 3 6; 1 5];
+R = zeros(rows_1, cols_2);
 
-for i = 1:rows_1
-    for j = 1:cols_1
-        M1(i,j) = counter
-        counter = counter + 1
-    end
-end
-
-counter = 1
-
-for i = 1:rows_2
-    for j = 1:cols_2
-        M2(i,j) = counter
-        counter = counter + 1
-    end
-end
-
-// compute product
+// compute multiplication
 
 for i = 1:cols_2
     for j = 1:rows_1
@@ -38,4 +21,5 @@ for i = 1:cols_2
     end
 end
 
-disp(R)
+disp(M1, M2, R) // display result of the implemented algorithm
+disp(M1*M2) // display result of the scilab implementation
