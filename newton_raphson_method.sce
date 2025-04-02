@@ -21,6 +21,6 @@ function [root] = newton_raphson_method(x0, tol, max_iter)
     end
 
     root = x0;
-end
+endfunction
 
 disp(newton_raphson_method(-3, 1e-6, 100))
