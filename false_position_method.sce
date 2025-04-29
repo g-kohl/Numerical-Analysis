@@ -8,7 +8,7 @@ endfunction
 
 function [root] = false_position_method(x0, x1, tol, max_iter)
     if f(x0) * f(x1) >= 0 then
-        error("This interval does not contain a root")
+        error("This interval may not contain a root")
     end
 
     for i = 1:max_iter
