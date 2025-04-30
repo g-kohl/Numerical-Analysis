@@ -6,7 +6,7 @@ endfunction
 
 function [y] = f_(x)
     y = 3*x.^2 + 4*x - 3;
-end
+endfunction
 
 // apply newton-raphson method
 
