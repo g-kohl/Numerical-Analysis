@@ -6,11 +6,11 @@ endfunction
 
 // apply fixed point iteration method
 
-function [root] = fixed_point_iteration_method(x0, tol, max_iter)
-    for i = 1:max_iter
+function [root] = fixed_point_iteration_method(x0, tolerance, max_iterations)
+    for i = 1:max_iterations
         x1 = g(x0);
 
-        if abs(x1-x0) < tol then
+        if abs(x1-x0) < tolerance then
             root = x1;
             return;
         end

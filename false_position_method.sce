@@ -6,15 +6,15 @@ endfunction
 
 // apply false position method
 
-function [root] = false_position_method(x0, x1, tol, max_iter)
+function [root] = false_position_method(x0, x1, tolerance, max_iterations)
     if f(x0) * f(x1) >= 0 then
         error("This interval may not contain a root")
     end
 
-    for i = 1:max_iter
+    for i = 1:max_iterations
         x2 = (x1*f(x0) - x0*f(x1))/(f(x0)-f(x1));
 
-        if abs(f(x2)) < tol then
+        if abs(f(x2)) < tolerance then
             root = x2;
             return;
         end

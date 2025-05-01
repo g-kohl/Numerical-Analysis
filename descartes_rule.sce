@@ -5,7 +5,7 @@ negative_coefficients = [-3 2 1 -1]; // P(-x) = -3x^3 + 2x^2 + x - 1
 
 // apply descartes' rule
 
-function sign = get_sign(n)
+function [sign] = get_sign(n)
     if n < 0 then
         sign = '-';
     elseif n > 0 then
@@ -15,7 +15,7 @@ function sign = get_sign(n)
     end
 endfunction
 
-function sign_changes = descartes_rule(coefficients)
+function [sign_changes] = descartes_rule(coefficients)
     sign_changes = 0;
     current_sign = get_sign(coefficients(1));
 

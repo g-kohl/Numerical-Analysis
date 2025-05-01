@@ -6,9 +6,9 @@ endfunction
 
 // apply secant method
 
-function [root] = secant_method(x0, x1, tol, max_iter)
-    for i = 1:max_iter
-        if abs(f(x1)) < tol then
+function [root] = secant_method(x0, x1, tolerance, max_iterations)
+    for i = 1:max_iterations
+        if abs(f(x1)) < tolerance then
             root = x1;
             return;
         end

@@ -6,7 +6,7 @@ b = [27; -61.5; -21.5];
 
 // apply gauss-seidel method
 
-function x1 = gauss_seidel_method(A, b, x0, tol, max_iter)
+function [x1] = gauss_seidel_method(A, b, x0, tol, max_iter)
     n = length(b);
     x1 = x0;
     

@@ -10,7 +10,7 @@ endfunction
 
 // apply bolzano's theorem
 
-function flag = is_derivative_sign_constant(a, b)
+function [flag] = is_derivative_sign_constant(a, b)
     x = linspace(a, b, 100);
     y = f_(x);
     

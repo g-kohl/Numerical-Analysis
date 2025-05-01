@@ -10,9 +10,9 @@ endfunction
 
 // apply newton-raphson method
 
-function [root] = newton_raphson_method(x0, tol, max_iter)
-    for i = 1:max_iter
-        if abs(f(x0)) < tol then
+function [root] = newton_raphson_method(x0, tolerance, max_iterations)
+    for i = 1:max_iterations
+        if abs(f(x0)) < tolerance then
             root = x0;
             return;
         end

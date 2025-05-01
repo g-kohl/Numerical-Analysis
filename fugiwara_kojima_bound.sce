@@ -4,7 +4,7 @@ coefficients = [1 1 -9 -1 20 -12]; // P(x) = x^5 + x^4 - 9x^3 - x^2 + 20x - 12
 
 // apply fugiwara's bound
 
-function bound = fugiwara_bound(coefficients, degree)
+function [bound] = fugiwara_bound(coefficients, degree)
     k = [];
 
     for i = 2:degree+1
@@ -18,7 +18,7 @@ endfunction
 
 // apply kojima's bound
 
-function bound = kojima_bound(coefficients, degree)
+function [bound] = kojima_bound(coefficients, degree)
     k = [];
 
     for i = 2:degree+1
