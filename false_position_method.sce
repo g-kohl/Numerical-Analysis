@@ -29,4 +29,4 @@ function [root] = false_position_method(x0, x1, tolerance, max_iterations)
     root = x2;
 endfunction
 
-disp(false_position_method(-4, -2, 1e-6, 100)) // display result
+disp(false_position_method(-4, -2, 1e-6, 100))

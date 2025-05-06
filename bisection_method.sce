@@ -29,4 +29,4 @@ function [root] = bisection_method(a, b, tolerance, max_iterations)
     root = xm;
 endfunction
 
-disp(bisection_method(-4, -2, 1e-6, 100)) // display result
+disp(bisection_method(-4, -2, 1e-6, 100))
