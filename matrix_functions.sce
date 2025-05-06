@@ -19,3 +19,24 @@ y = L \ (P * b);
 x = U \ y;
 
 disp(x)
+
+disp(A*x)
+disp(b)
+
+// norm
+
+disp(norm(A))
+
+// condition number
+
+disp(cond(A))
+
+// eigenvalues
+
+disp(spec(A))
+
+// eigenvectors
+
+[eigenvectors, diagonal_eigenvalues] = spec(A)
+
+disp(eigenvectors, diagonal_eigenvalues)

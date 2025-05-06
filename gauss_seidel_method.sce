@@ -6,11 +6,11 @@ b = [27; -61.5; -21.5];
 
 // apply gauss-seidel method
 
-function [x1] = gauss_seidel_method(A, b, x0, tol, max_iter)
+function [x1] = gauss_seidel_method(A, b, x0, tolerance, max_iterations)
     n = length(b);
     x1 = x0;
     
-    for k = 1:max_iter
+    for k = 1:max_iterations
         x0 = x1;
 
         for i = 1:n
@@ -25,7 +25,7 @@ function [x1] = gauss_seidel_method(A, b, x0, tol, max_iter)
             x1(i) = (b(i) - sigma) / A(i,i);
         end
 
-        if norm(x1 - x0, %inf) < tol then
+        if norm(x1 - x0, %inf) < tolerance then
             return;
         end
     end
