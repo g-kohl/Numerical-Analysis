@@ -1,7 +1,6 @@
 // define matrix A and vector b
 
 A = [10 2 -1; -3 -6 2; 1 1 5];
-
 b = [27; -61.5; -21.5];
 
 // apply jacobi method
