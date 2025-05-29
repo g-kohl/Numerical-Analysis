@@ -1,8 +1,8 @@
 // define matrix A and vector b
 
-A = [10 2 -1; -3 -6 2; 1 1 5];
+A = [1 -2 4; 1 1 1; 1 3 9];
 
-b = [27; -61.5; -21.5];
+b = [3; 0; -3];
 
 // gauss elimination
 
