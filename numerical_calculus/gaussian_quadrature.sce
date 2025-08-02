@@ -4,7 +4,6 @@ function y = f(x)
     y = x.^3 + 2;
 endfunction
 
-
 // apply gaussian quadrature
 
 function [I] = gaussian_quadrature(f, a, b)
